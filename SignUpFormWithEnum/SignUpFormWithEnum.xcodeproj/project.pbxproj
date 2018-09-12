@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A5AF824921498046008C40A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF824821498046008C40A0 /* AppDelegate.swift */; };
-		A5AF824B21498046008C40A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF824A21498046008C40A0 /* ViewController.swift */; };
+		A5AF824B21498046008C40A0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF824A21498046008C40A0 /* SignUpViewController.swift */; };
 		A5AF824E21498046008C40A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AF824C21498046008C40A0 /* Main.storyboard */; };
 		A5AF825021498049008C40A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AF824F21498049008C40A0 /* Assets.xcassets */; };
 		A5AF825321498049008C40A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AF825121498049008C40A0 /* LaunchScreen.storyboard */; };
+		A5AF825B214984E6008C40A0 /* cellSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF825A214984E6008C40A0 /* cellSignUp.swift */; };
+		A5AF825D21498D21008C40A0 /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF825C21498D21008C40A0 /* FormData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5AF824521498046008C40A0 /* SignUpFormWithEnum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpFormWithEnum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AF824821498046008C40A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5AF824A21498046008C40A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5AF824A21498046008C40A0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A5AF824D21498046008C40A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5AF824F21498049008C40A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5AF825221498049008C40A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5AF825421498049008C40A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5AF825A214984E6008C40A0 /* cellSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellSignUp.swift; sourceTree = "<group>"; };
+		A5AF825C21498D21008C40A0 /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				A5AF824821498046008C40A0 /* AppDelegate.swift */,
-				A5AF824A21498046008C40A0 /* ViewController.swift */,
+				A5AF824A21498046008C40A0 /* SignUpViewController.swift */,
 				A5AF824C21498046008C40A0 /* Main.storyboard */,
 				A5AF824F21498049008C40A0 /* Assets.xcassets */,
 				A5AF825121498049008C40A0 /* LaunchScreen.storyboard */,
 				A5AF825421498049008C40A0 /* Info.plist */,
+				A5AF825A214984E6008C40A0 /* cellSignUp.swift */,
+				A5AF825C21498D21008C40A0 /* FormData.swift */,
 			);
 			path = SignUpFormWithEnum;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5AF824B21498046008C40A0 /* ViewController.swift in Sources */,
+				A5AF824B21498046008C40A0 /* SignUpViewController.swift in Sources */,
+				A5AF825B214984E6008C40A0 /* cellSignUp.swift in Sources */,
 				A5AF824921498046008C40A0 /* AppDelegate.swift in Sources */,
+				A5AF825D21498D21008C40A0 /* FormData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +288,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SignUpFormWithEnum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +298,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TA.SignUpFormWithEnum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,7 +308,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SignUpFormWithEnum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TA.SignUpFormWithEnum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
