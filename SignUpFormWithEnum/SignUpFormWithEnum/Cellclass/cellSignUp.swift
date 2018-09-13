@@ -52,11 +52,20 @@ class cellSignUp: UITableViewCell, ReuseableView {
     txtFieldInput.isSecureTextEntry = formData.secureTextEntry
     txtFieldInput.placeholder = formData.textFieldPlaceHolder
     txtFieldInput.addTarget(self, action: #selector(valueChange(_:)), for: .editingChanged)
+    txtFieldInput.delegate = self
   }
   
   @objc func valueChange(_ textField: UITextField) {
     if let delegate = self.delege, let formData = self.formData, let text = textField.text {
       delegate.textFieldValueChanged(value: text, formData: formData)
     }
+  }
+}
+
+extension cellSignUp: UITextFieldDelegate {
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    return true
   }
 }
