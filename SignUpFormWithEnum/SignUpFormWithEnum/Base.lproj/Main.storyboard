@@ -118,12 +118,14 @@
                     <connections>
                         <outlet property="footerView" destination="sWZ-kF-fND" id="bPJ-Ke-gt7"/>
                         <outlet property="headerView" destination="hO4-AP-Z9b" id="oA3-yJ-bbi"/>
+                        <outlet property="signUpViewModel" destination="XTj-b8-XvZ" id="noR-aU-HhI"/>
                         <outlet property="tblViewSignUP" destination="alr-TK-r3i" id="Xd7-Uq-UI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="XTj-b8-XvZ" customClass="SignUpViewModel" customModule="SignUpFormWithEnum" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="-596" y="200"/>
+            <point key="canvasLocation" x="-702" y="194"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z90-Qd-Vyo">

@@ -14,6 +14,7 @@
 		A5AF825321498049008C40A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AF825121498049008C40A0 /* LaunchScreen.storyboard */; };
 		A5AF825B214984E6008C40A0 /* cellSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF825A214984E6008C40A0 /* cellSignUp.swift */; };
 		A5AF825D21498D21008C40A0 /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF825C21498D21008C40A0 /* FormData.swift */; };
+		A5AF8260214A3EE8008C40A0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF825F214A3EE8008C40A0 /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A5AF825421498049008C40A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5AF825A214984E6008C40A0 /* cellSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellSignUp.swift; sourceTree = "<group>"; };
 		A5AF825C21498D21008C40A0 /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
+		A5AF825F214A3EE8008C40A0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,23 @@
 			children = (
 				A5AF824821498046008C40A0 /* AppDelegate.swift */,
 				A5AF824A21498046008C40A0 /* SignUpViewController.swift */,
+				A5AF825C21498D21008C40A0 /* FormData.swift */,
+				A5AF825F214A3EE8008C40A0 /* SignUpViewModel.swift */,
+				A5AF8263214ADF2D008C40A0 /* Cellclass */,
 				A5AF824C21498046008C40A0 /* Main.storyboard */,
 				A5AF824F21498049008C40A0 /* Assets.xcassets */,
 				A5AF825121498049008C40A0 /* LaunchScreen.storyboard */,
 				A5AF825421498049008C40A0 /* Info.plist */,
-				A5AF825A214984E6008C40A0 /* cellSignUp.swift */,
-				A5AF825C21498D21008C40A0 /* FormData.swift */,
 			);
 			path = SignUpFormWithEnum;
+			sourceTree = "<group>";
+		};
+		A5AF8263214ADF2D008C40A0 /* Cellclass */ = {
+			isa = PBXGroup;
+			children = (
+				A5AF825A214984E6008C40A0 /* cellSignUp.swift */,
+			);
+			path = Cellclass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			files = (
 				A5AF824B21498046008C40A0 /* SignUpViewController.swift in Sources */,
 				A5AF825B214984E6008C40A0 /* cellSignUp.swift in Sources */,
+				A5AF8260214A3EE8008C40A0 /* SignUpViewModel.swift in Sources */,
 				A5AF824921498046008C40A0 /* AppDelegate.swift in Sources */,
 				A5AF825D21498D21008C40A0 /* FormData.swift in Sources */,
 			);

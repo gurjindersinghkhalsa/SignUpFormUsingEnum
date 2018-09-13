@@ -14,13 +14,11 @@ class User {
   var password: String = ""
 }
 
-// let cant user
-
 enum SignUpFormData {
-  case userName
+  case email
   case password
   
-  static var arraySignUpFrom = [userName, password]
+  static var arraySignUpFrom = [email, password]
   static var user: User? = nil
   
   var user: User {
@@ -35,17 +33,18 @@ enum SignUpFormData {
   var secureTextEntry: Bool {
     get {
       switch self {
-      case .userName:
+      case .email:
         return false
       default:
         return true
       }
     }
   }
+  
   var keyBoardType: UIKeyboardType {
     get {
       switch self {
-      case .userName:
+      case .email:
         return .emailAddress
       default:
         return .default
@@ -56,8 +55,8 @@ enum SignUpFormData {
   var textFieldPlaceHolder: String {
     get {
       switch  self {
-      case .userName:
-        return "Enter Name"
+      case .email:
+        return "Enter email address"
       default:
         return "Enter Password"
       }
@@ -67,8 +66,8 @@ enum SignUpFormData {
   var labelPlaceHolder: String {
     get {
       switch  self {
-      case .userName:
-        return "Name"
+      case .email:
+        return "Email"
       default:
         return "Password"
       }
