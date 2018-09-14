@@ -26,11 +26,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do SignUo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKY-N3-Nkb">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provide Following details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKY-N3-Nkb">
                                             <rect key="frame" x="68" y="36" width="239" height="55"/>
                                             <color key="backgroundColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="19"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -47,7 +47,8 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-Vs-VIR">
-                                            <rect key="frame" x="60" y="17" width="255" height="30"/>
+                                            <rect key="frame" x="60" y="13" width="255" height="39"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
                                             <state key="normal" title="SignUp">
                                                 <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,8 +60,8 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="lxu-Vs-VIR" firstAttribute="top" secondItem="sWZ-kF-fND" secondAttribute="top" constant="17" id="9sX-d9-chF"/>
-                                        <constraint firstAttribute="bottom" secondItem="lxu-Vs-VIR" secondAttribute="bottom" constant="17" id="FzT-al-4Wl"/>
+                                        <constraint firstItem="lxu-Vs-VIR" firstAttribute="top" secondItem="sWZ-kF-fND" secondAttribute="top" constant="13" id="9sX-d9-chF"/>
+                                        <constraint firstAttribute="bottom" secondItem="lxu-Vs-VIR" secondAttribute="bottom" constant="12" id="FzT-al-4Wl"/>
                                         <constraint firstAttribute="trailing" secondItem="lxu-Vs-VIR" secondAttribute="trailing" constant="60" id="Gg8-nO-EWz"/>
                                         <constraint firstItem="lxu-Vs-VIR" firstAttribute="leading" secondItem="sWZ-kF-fND" secondAttribute="leading" constant="60" id="afR-Qk-wC2"/>
                                     </constraints>
@@ -125,7 +126,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="XTj-b8-XvZ" customClass="SignUpViewModel" customModule="SignUpFormWithEnum" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="-702" y="194"/>
+            <point key="canvasLocation" x="-242.40000000000001" y="184.85757121439281"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z90-Qd-Vyo">

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class User {
-  var userName: String = ""
+  var email: String = ""
   var password: String = ""
 }
 
@@ -56,9 +56,9 @@ enum SignUpFormData {
     get {
       switch  self {
       case .email:
-        return "Enter email address"
+        return "Choose your email address"
       default:
-        return "Enter Password"
+        return "Choose your password"
       }
     }
   }

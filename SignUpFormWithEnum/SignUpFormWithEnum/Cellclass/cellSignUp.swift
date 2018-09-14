@@ -14,9 +14,11 @@ protocol FormCellDelegate: class {
 
 protocol ReuseableView: class {
   static var defaultReuseIdentifier: String { get }
+  static var nib: UINib? { get }
 }
 
 extension ReuseableView where Self: UIView {
+  static var nib: UINib? { return nil }
   static var defaultReuseIdentifier: String {
     return String(describing: self)
   }
