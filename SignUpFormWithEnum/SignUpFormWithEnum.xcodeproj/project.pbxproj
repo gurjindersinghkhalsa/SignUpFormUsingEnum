@@ -41,6 +41,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28B4030A2669461A002F8921 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5AF825F214A3EE8008C40A0 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		28B4030B26694622002F8921 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5AF824A21498046008C40A0 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28B4030C26694633002F8921 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A5AF824821498046008C40A0 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		A5AF823C21498046008C40A0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +84,10 @@
 		A5AF824721498046008C40A0 /* SignUpFormWithEnum */ = {
 			isa = PBXGroup;
 			children = (
-				A5AF824821498046008C40A0 /* AppDelegate.swift */,
-				A5AF824A21498046008C40A0 /* SignUpViewController.swift */,
+				28B4030C26694633002F8921 /* AppDelegate */,
+				28B4030B26694622002F8921 /* Controller */,
+				28B4030A2669461A002F8921 /* ViewModel */,
 				A5AF825C21498D21008C40A0 /* FormData.swift */,
-				A5AF825F214A3EE8008C40A0 /* SignUpViewModel.swift */,
 				A5AF8263214ADF2D008C40A0 /* Cellclass */,
 				A5AF824C21498046008C40A0 /* Main.storyboard */,
 				A5AF824F21498049008C40A0 /* Assets.xcassets */,

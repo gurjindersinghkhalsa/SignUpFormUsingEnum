@@ -9,7 +9,7 @@
 import UIKit
 
 protocol FormCellDelegate: class {
-  func textFieldValueChanged(value: String, formData: SignUpFormData)
+  func textFieldValueChanged(value: String, formData: SignUpForm)
 }
 
 protocol ReuseableView: class {
@@ -26,7 +26,7 @@ extension ReuseableView where Self: UIView {
 
 class cellSignUp: UITableViewCell, ReuseableView {
 
-  weak var delege: FormCellDelegate?
+  weak var delegate: FormCellDelegate?
   @IBOutlet weak var lblHeading: UILabel!
   @IBOutlet weak var txtFieldInput: UITextField!
   
@@ -40,7 +40,7 @@ class cellSignUp: UITableViewCell, ReuseableView {
     // Configure the view for the selected state
   }
   
-  var formData: SignUpFormData? {
+  var formData: SignUpForm? {
     didSet {
       if let formData = formData {
         configureCell(formData: formData)
@@ -48,7 +48,7 @@ class cellSignUp: UITableViewCell, ReuseableView {
     }
   }
   
-  func configureCell(formData: SignUpFormData) {
+  func configureCell(formData: SignUpForm) {
     lblHeading.text = formData.labelPlaceHolder
     txtFieldInput.keyboardType = formData.keyBoardType
     txtFieldInput.isSecureTextEntry = formData.secureTextEntry
@@ -58,7 +58,7 @@ class cellSignUp: UITableViewCell, ReuseableView {
   }
   
   @objc func valueChange(_ textField: UITextField) {
-    if let delegate = self.delege, let formData = self.formData, let text = textField.text {
+    if let delegate = self.delegate, let formData = self.formData, let text = textField.text {
       delegate.textFieldValueChanged(value: text, formData: formData)
     }
   }

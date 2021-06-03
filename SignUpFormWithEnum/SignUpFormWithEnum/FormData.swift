@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-class User {
+struct User {
   var email: String = ""
   var password: String = ""
 }
 
-enum SignUpFormData {
+enum SignUpForm {
   case email
   case password
   
@@ -23,7 +23,7 @@ enum SignUpFormData {
   
   var user: User {
     get {
-      return SignUpFormData.user!
+      return SignUpForm.user!
     }
     set {
       user = newValue

@@ -9,38 +9,37 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
-  @IBOutlet var signUpViewModel: SignUpViewModel!
-  @IBOutlet weak var headerView: UIView!
-  @IBOutlet weak var footerView: UIView!
-  @IBOutlet weak var tblViewSignUP: UITableView!
-
-  var formData = [SignUpFormData]()
-  var user = User()
-  
-  // MARK: ViewLifeCycle Methods
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    tblViewSignUP.dataSource = self
-    formData = SignUpFormData.arraySignUpFrom
-    SignUpFormData.user = user
-  }
-
-  // MARK: IBAction Methods
-  
-  @IBAction func tapSignUp(_ sender: Any) {
-    print("You Name is \(user.email)")
-    print("You password is \(user.password)")
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-  }
+    
+    @IBOutlet var signUpViewModel: SignUpViewModel!
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var footerView: UIView!
+    @IBOutlet weak var tblViewSignUP: UITableView!
+    
+    var formData = [SignUpForm]()
+    var user = User()
+    
+    // MARK: ViewLifeCycle Methods
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tblViewSignUP.dataSource = self
+        formData = SignUpForm.arraySignUpFrom
+        SignUpForm.user = user
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    // MARK: IBAction Methods
+    
+    @IBAction func tapSignUp(_ sender: Any) {
+        print("You Name is \(user.email)")
+        print("You password is \(user.password)")
+    }
+    
 }
 
 extension SignUpViewController: FormCellDelegate {
-  func textFieldValueChanged(value: String, formData: SignUpFormData) {
+  func textFieldValueChanged(value: String, formData: SignUpForm) {
     switch formData {
     case .email:
       user.email = value
@@ -58,10 +57,9 @@ extension SignUpViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeReusableCell(indexPath: indexPath as NSIndexPath) as cellSignUp
-    let object = formData[indexPath.row]
-    cell.formData = object
+    cell.formData = formData[indexPath.row]
     cell.txtFieldInput.tag = indexPath.row
-    cell.delege = self
+    cell.delegate = self
     return cell
   }
 }
